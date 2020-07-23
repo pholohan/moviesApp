@@ -7,6 +7,7 @@ import useMovie from "../hooks/useMovie";
 
 const MoviePage = props => {
   const { id } = props.match.params;
+  console.log(id);
   const [movie] = useMovie(id)  // NEW
   return (
     <>
