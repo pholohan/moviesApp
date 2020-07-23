@@ -4,6 +4,7 @@ import MovieList from "../movieList";
 import FilterControls from "../filterControls";
 
 const MovieListPageTemplate = ({movies, title, action}) => {
+  console.log(movies)
   const [nameFilter, setNameFilter] = useState("");
   const [genreFilter, setGenreFilter] = useState("0");
   const genre = Number(genreFilter)
