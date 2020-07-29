@@ -1,8 +1,8 @@
 import React from "react";
 import PageTemplate from '../components/templateMoviePage'
-import MovieReview from "../components/movieReview";
+import MovieCredit from "../components/movieCredit";
 
-const MovieCreditsPage = (props) => {
+const MovieCreditPage = (props) => {
   return (
       <PageTemplate movie={props.location.state.movie}>
         <MovieCredit credit={props.location.state.credit} /> 

@@ -18,8 +18,7 @@ export default ({ movie }) => {
         <tr>
           <th scope="col">Character</th>
           <th scope="col">Actor Name</th>
-          <th scope="col">Profile</th>
-          <th scope="col">Bio</th>
+           <th scope="col">Bio</th>
         </tr>
       </thead>
       <tbody>
@@ -28,14 +27,11 @@ export default ({ movie }) => {
               <tr key={c.id}>
                 <td>{c.character}</td>
                 <td>{c.name}</td>
-                <td><img src={c.profile_path
-                              ? `https://image.tmdb.org/t/p/w500/${c.profile_path}`
-                              : "./film-poster-placeholder.png"} ></img></td>
                 <td>
                   {" "}
                   <Link
                     to={{
-                      pathname: `/credits/${c.credit_id}`,
+                      pathname: `/credits/${c.id}`,
                       state: {
                         credit: c,
                         movie: movie
