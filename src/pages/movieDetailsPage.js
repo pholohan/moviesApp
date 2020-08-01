@@ -4,11 +4,11 @@ import PageTemplate from "../components/templateMoviePage";
 import { Link, Route, withRouter } from "react-router-dom";
 import MovieReviews from "../components/movieReviews";
 import MovieCredits from "../components/movieCredits";
+import RecommendedMoviesPage from "../pages/recommendedMoviesPage";
 import useMovie from "../hooks/useMovie";
 
 const MoviePage = props => {
   const { id } = props.match.params;
-  console.log(id);
   const [movie] = useMovie(id)  // NEW
   return (
     <>
@@ -62,6 +62,32 @@ const MoviePage = props => {
         <Route
           path={`/movies/:id/credits`}
           render={props => <MovieCredits movie={movie} {...props} />}
+        />
+        <div className="row">
+          <div className="col-12 ">
+          {!props.history.location.pathname.endsWith("/recommendations") ? (
+            <Link 
+                className="btn btn-primary btn-block active" 
+                to={{pathname: `/movies/${id}/recommendations`,
+                state: {
+                  movie: movie
+                }}}
+            >
+              See Movie Recommendations
+            </Link>
+            ) : (
+              <Link
+                className="btn btn-primary btn-block active"
+                to={`/movies/${id}`}
+              >
+                Hide Recommendations 
+              </Link>
+            )}
+          </div>
+        </div>
+        <Route
+          path={`/movies/:id/recommendations`}
+          render={props => <RecommendedMoviesPage movie={movie} {...props} />}
         />
       </>
     ) : (
