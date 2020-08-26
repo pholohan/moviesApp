@@ -240,16 +240,29 @@ No additional requirements after cloning the repo as it is an expansion of the M
 
 ### Component catalogue.
 
-....... Insert a screenshot from the Storybook UI showing your components' stories. [For projects that expanded the Movies app, hi-light stories relating to new/modified components - see example screenshot below] .......
+Addition of Date Filter to Filter Controls, Movie Review to Storys and Movies Credits to Storys
 
-![][stories]
+![](/images/Story.png)
 
 ### UI Design.
 
-...... Insert screenshots of the app's views (see example below) with appropriate captions (For extension to the Movies Fan App, only show the new/modified views) ........
+![](/images/UpcomingMovies.png)
+>Shows Movie Card with List of Upcoming Movies
 
-![][view]
->Shows detailed information on a movie. Clicking the 'Show Reviews' button will display extracts from critic reviews.
+![](/images/MovieDetails.png)
+>Shows Movie Details with Additoinal Movie Options for Show Cast and Crew, Movie Recommendations and Similar Movies
+
+![](/images/ShowCastandCrew.png)
+>Show Cast and Crew from Movie with the option of Show More Info on each cast member
+
+![](/images/MoreInfoonCast.png)
+>Shows Biography of Cast Member
+
+![](/images/MovieRecommendations.png)
+>Shows Movie Recommendations based on the Movie Selected
+
+![](/images/SimilarMovies.png)
+>Shows Similar Movies based on the Movie Selected
 
 ### Routing.
 
