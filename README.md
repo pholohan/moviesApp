@@ -273,21 +273,8 @@ Addition of Date Filter to Filter Controls, Movie Review to Storys and Movies Cr
 
 ## React feature set.
 
-..... Insert a bullet-point list of the React features used in your project, including one source code file references for each - see examples below ......
-
-+ useState and useEffect hooks - src/components/fileA.js
-+ useContext hook - src/components/fileb.js
-+ Extended Link - src/components/fileA.js
-+ Programmatic navigation - src/pages/fileC.js
-+ etc
-+ etc
-+ etc
++ useState and useEffect hooks - src/components/movie credits/index.js
 
 ## Independent learning.
 
-. . . . . Briefly state the technologies/techniques used in your project codebase that were not covered in the lectures/labs. Provide source code filename references to support your assertions and include source material references (articles/blogs) ......... 
-
-
-[model]: ./data.jpg
-[view]: ./view.png
-[stories]: ./storybook.png
+All technologies and techniques used to expand the MoviesApp were covered in the Lectures and Labs
