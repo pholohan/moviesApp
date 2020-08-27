@@ -266,13 +266,10 @@ Addition of Date Filter to Filter Controls, Movie Review to Storys and Movies Cr
 
 ### Routing.
 
-...... Insert a list of the routes supported by your app and state the associated view. If relevant, specify which of the routes require authentication, i.e. protected/private. For projects that expanded the Movies Fan app, only new routes should be listed ......... 
-
-+ /blogs - displays all published blogs.
-+ /blogs/:id (private) - detail view of a particular blog.
-+ /blogs/:id/comments (private) - detail view of a particular blog and its comments.
-+ etc.
-+ etc.
++ /recommendations/:id - displays the recommended movies for the selected movie
++ /credits/:id - displays the cast and crew the selected movie
++ /similar/:id - display similar movies to the movie selected
++ /upcoming - displays upcoming movies
 
 ## React feature set.
 
